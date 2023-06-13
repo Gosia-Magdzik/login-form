@@ -10,10 +10,16 @@ export const Wrapper = styled.div`
     border-radius: 20px;
     overflow: hidden;
     margin-top: 10%;
+
+    @media (max-width: 768px) {
+        //height: 100%;
+        width: 90%;
+        margin-top: 0%;
+
+    };
 `;
 
 export const BasisA = styled.div`
-    
     background: rgba(0,170,170,0.5);
     box-shadow: inset 0 0 3em rgba(0,170,170,0.5), 0 0 3em rgba(0,170,170,0.5);
     border-radius: 50%;
@@ -23,6 +29,8 @@ export const BasisA = styled.div`
     align-items: center;
     justify-content: flex-end;
     display: flex;
+    overflow: hidden;
+
 `;
 
 export const Logo = styled.p`
