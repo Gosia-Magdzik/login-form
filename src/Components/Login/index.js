@@ -1,4 +1,4 @@
-import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2 } from "./styled";
+import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2, ForgotLink, LabelWrapper } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
 import { useState } from "react";
@@ -28,6 +28,10 @@ export const Login = () => {
                             <img src={showPassword ? eyeClose : eyeOpen} alt="Toggle Password Visibility"/>
                         </ShowPasswordButton>
                     </IconWrapper>
+                    <LabelWrapper>
+                        <label><input type="checkbox" /> &nbsp; Remember Me &nbsp; |</label>
+                        <ForgotLink href="#">forgot password ?</ForgotLink>
+                    </LabelWrapper>
                 </InputWrapper>
             </Part1>
             <Part2>

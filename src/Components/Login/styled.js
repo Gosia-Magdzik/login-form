@@ -40,10 +40,12 @@ export const Button = styled.button`
 	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
     box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
 	border: #0dd solid 2px;
-    margin-right: 40px;
+    margin: 40px;
+    width: 300px;
 
 
     &:hover {
+        filter: brightness(1.05);
         transform: scale(1.1);
         transition: transform 0.3s ease;
         background-color: #0dd;
@@ -86,3 +88,15 @@ export const Part1 = styled.div`
 export const Part2 = styled.div`
     margin: 15px;
 `;
+
+export const ForgotLink = styled.a`
+    text-decoration: none;
+`;
+
+export const LabelWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10px 0px 20px;
+`;
+
