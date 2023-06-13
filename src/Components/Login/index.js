@@ -1,4 +1,4 @@
-import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo } from "./styled";
+import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2 } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
 import { useState } from "react";
@@ -12,22 +12,29 @@ export const Login = () => {
 
     return (
         <>
-            <h1>Hello User!</h1>
-            <InputWrapper>
-                <IconWrapper>
-                    <Img src={avatar} />
-                    <Input type="text" placeholder="username"/>
-                </IconWrapper>
-                <IconWrapper>
-                    <Img src={fingerprint}/>
-                    <Input type={showPassword ? 'text' : 'password'} placeholder="password"/>
-                    <ShowPasswordButton onClick={toggleShowPassword}>
-                        <img src={showPassword ? eyeClose : eyeOpen} alt="Toggle Password Visibility"/>
-                    </ShowPasswordButton>
-                </IconWrapper>
-            </InputWrapper>
-            <Button>LOG IN</Button>
-            <SignInInfo>Don't have an account yet? Sign Up</SignInInfo>
+        <Wrapper>
+            <Part1>
+                <h1>Hello User!</h1>
+                <br/><br/><br/>
+                <InputWrapper>
+                    <IconWrapper>
+                        <Img src={avatar} />
+                        <Input type="text" placeholder="username"/>
+                    </IconWrapper>
+                    <IconWrapper>
+                        <Img src={fingerprint}/>
+                        <Input type={showPassword ? 'text' : 'password'} placeholder="password"/>
+                        <ShowPasswordButton onClick={toggleShowPassword}>
+                            <img src={showPassword ? eyeClose : eyeOpen} alt="Toggle Password Visibility"/>
+                        </ShowPasswordButton>
+                    </IconWrapper>
+                </InputWrapper>
+            </Part1>
+            <Part2>
+                <Button>LOG IN</Button>
+                <SignInInfo>Don't have an account yet? Sign Up</SignInInfo>
+            </Part2>
+        </Wrapper>
         </>
     );
 }

@@ -70,3 +70,19 @@ export const ShowPasswordButton = styled.button`
 export const SignInInfo = styled.div`
     margin: 15px;
 `;
+
+
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+`;
+
+export const Part1 = styled.div`
+    margin: 15px;
+`;
+
+export const Part2 = styled.div`
+    margin: 15px;
+`;
