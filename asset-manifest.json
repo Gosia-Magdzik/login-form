@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/gosia-magdzik.github.io/login-form/static/js/main.4217922b.js",
-    "static/js/787.d0fbee60.chunk.js": "/gosia-magdzik.github.io/login-form/static/js/787.d0fbee60.chunk.js",
-    "static/media/fingerprint.svg": "/gosia-magdzik.github.io/login-form/static/media/fingerprint.8eb572c22e74270a6e049ea1209fb713.svg",
-    "static/media/eye_open.svg": "/gosia-magdzik.github.io/login-form/static/media/eye_open.05e2865ee9fe1f3bf1fafe0e04bbd944.svg",
-    "static/media/eye_close.svg": "/gosia-magdzik.github.io/login-form/static/media/eye_close.936ea0a0c3b0ed85949496313476ada8.svg",
-    "index.html": "/gosia-magdzik.github.io/login-form/index.html",
-    "static/media/avatar.svg": "/gosia-magdzik.github.io/login-form/static/media/avatar.37703aa03acab6b9d03fe148cb07692c.svg",
-    "main.4217922b.js.map": "/gosia-magdzik.github.io/login-form/static/js/main.4217922b.js.map",
-    "787.d0fbee60.chunk.js.map": "/gosia-magdzik.github.io/login-form/static/js/787.d0fbee60.chunk.js.map"
+    "main.js": "/login-form/static/js/main.c96d3cac.js",
+    "static/js/787.d0fbee60.chunk.js": "/login-form/static/js/787.d0fbee60.chunk.js",
+    "static/media/fingerprint.svg": "/login-form/static/media/fingerprint.8eb572c22e74270a6e049ea1209fb713.svg",
+    "static/media/eye_open.svg": "/login-form/static/media/eye_open.05e2865ee9fe1f3bf1fafe0e04bbd944.svg",
+    "static/media/eye_close.svg": "/login-form/static/media/eye_close.936ea0a0c3b0ed85949496313476ada8.svg",
+    "index.html": "/login-form/index.html",
+    "static/media/avatar.svg": "/login-form/static/media/avatar.37703aa03acab6b9d03fe148cb07692c.svg",
+    "main.c96d3cac.js.map": "/login-form/static/js/main.c96d3cac.js.map",
+    "787.d0fbee60.chunk.js.map": "/login-form/static/js/787.d0fbee60.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4217922b.js"
+    "static/js/main.c96d3cac.js"
   ]
 }
