@@ -1,4 +1,4 @@
-import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton } from "./styled";
+import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
 import { useState } from "react";
@@ -27,7 +27,7 @@ export const Login = () => {
                 </IconWrapper>
             </InputWrapper>
             <Button>LOG IN</Button>
-            <p>Don't have an account yet? Sign Up</p>
+            <SignInInfo>Don't have an account yet? Sign Up</SignInInfo>
         </>
     );
 }
