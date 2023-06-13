@@ -20,7 +20,7 @@ export const IconWrapper = styled.div`
     align-items: flex-end;
     margin-bottom: 40px;
     border: 1px, solid;
-    
+    position: relative;
 `;
 
 export const Img = styled.img`
@@ -42,8 +42,25 @@ export const Button = styled.button`
 	border: #0dd solid 2px;
 
     &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
         background-color: #0dd;
 		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
     }
 
+    &:active {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+        background-color: #0dd;
+    }
+`;
+
+export const ShowPasswordButton = styled.button`
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 `;

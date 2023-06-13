@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: linear-gradient(90deg, #808080, #995199);
+        background: #808080;
         font-family: 'IBM Plex Sans', monospace;
         display: flex;
         align-items: center;
