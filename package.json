@@ -2,7 +2,7 @@
   "name": "login-form",
   "version": "0.1.0",
   "private": true,
-  "homepage": "gosia-magdzik.github.io/login-form/",
+  "homepage": "https://gosia-magdzik.github.io/login-form/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
