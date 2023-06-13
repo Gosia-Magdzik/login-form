@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background: #808080;
-        font-family: 'IBM Plex Sans', monospace;
+        font-family: 'Poppins', sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
