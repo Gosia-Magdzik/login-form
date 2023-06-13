@@ -12,7 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: linear-gradient(90deg, #b6fdbf, #a8ff78);
+        background: linear-gradient(90deg, #808080, #995199);
         font-family: 'IBM Plex Sans', monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }; 
 `;    

@@ -1,12 +1,11 @@
 import { GlobalStyle } from "./GlobalStyle"
+import { MainBox } from "./Components/MainBox";
 
 function App() {
   return (
     <>
       <GlobalStyle/>
-      <div>     
-            Learn React
-      </div>
+      <MainBox/>
     </>
   );
 }
