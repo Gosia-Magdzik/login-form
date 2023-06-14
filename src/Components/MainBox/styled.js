@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -7,6 +8,7 @@ export const Wrapper = styled.div`
     background-color: #f4fcff;
     border-radius: 20px;
     margin-top: 10%;
+    position: relative;
 
     @media (max-width: 768px) {
         height: 100%;
@@ -16,13 +18,12 @@ export const Wrapper = styled.div`
 `;
 
 export const BasisA = styled.div`
-    background: rgba(0,170,170,0.5);
-    box-shadow: inset 0 0 3em rgba(0,170,170,0.5), 0 0 3em rgba(0,170,170,0.5);
+    background: #00aaaa80;
+    box-shadow: inset 0 0 3em #00aaaa80, 0 0 3em #00aaaa80;
     flex-basis: 30%;
     align-items: center;
     justify-content: flex-end;
     display: flex;
-    overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;`;
 
@@ -30,12 +31,11 @@ export const Logo = styled.p`
     color: black;
     padding: 10px;
     border: 1px solid;
-    margin: 30px
+    margin: 30px;
 `;
 
-export const BasisB = styled.div`
-
-
+export const BasisB = styled(motion.div)`
+    background: none;
 `;
 
 

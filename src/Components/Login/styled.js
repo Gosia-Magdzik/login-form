@@ -90,7 +90,7 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 650px;
 `;
 
 export const Part1 = styled.div`

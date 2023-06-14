@@ -1,21 +1,23 @@
+import { useContext, useState } from "react";
 import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2, ForgotLink, LabelWrapper, Label, Welcome, SignLink } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
-import { useState } from "react";
 import eyeOpen from "../Images/eye_open.svg"
 import eyeClose from "../Images/eye_close.svg"
+import { AccountContext } from "../accountContext";
 
 export const Login = () => {
 
     const [showPassword, setShowPassword] = useState(false);
     const toggleShowPassword = () => setShowPassword(!showPassword)
 
+    const { switchToSignup } = useContext(AccountContext)
+
     return (
         <>
         <Wrapper>
             <Part1>
-                <Welcome>Hello User!</Welcome>
-                <br/><br/><br/>
+                <Welcome>Hello User!</Welcome><br/>
                 <InputWrapper>
                     <IconWrapper>
                         <Img src={avatar} />
@@ -36,7 +38,7 @@ export const Login = () => {
             </Part1>
             <Part2>
                 <Button>LOG IN</Button>
-                <SignInInfo href="#">Don't have an account yet? <SignLink>Sign Up</SignLink></SignInInfo>
+                <SignInInfo href="#">Don't have an account yet? <SignLink onClick={switchToSignup}>Sign Up</SignLink></SignInInfo>
             </Part2>
         </Wrapper>
         </>
