@@ -23,8 +23,8 @@ export const BasisA = styled.div`
     justify-content: flex-end;
     display: flex;
     overflow: hidden;
-
-`;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;`;
 
 export const Logo = styled.p`
     color: black;
