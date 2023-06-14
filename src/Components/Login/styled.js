@@ -13,6 +13,10 @@ export const InputWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+
+    @media (max-width: 768px) {
+        margin-right: 5px;
+    };
 `;
 
 export const IconWrapper = styled.div`
@@ -41,8 +45,9 @@ export const Button = styled.button`
     box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
 	border: #0dd solid 2px;
     margin: 40px;
-    width: 300px;
-
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
 
     &:hover {
         filter: brightness(1.05);
@@ -71,6 +76,13 @@ export const ShowPasswordButton = styled.button`
 
 export const SignInInfo = styled.div`
     margin: 15px;
+    word-wrap: break-word;
+`;
+
+export const SignLink = styled.a`
+    font-weight: bold;
+    color: rgba(0,170,170,1);
+    
 `;
 
 
@@ -95,8 +107,16 @@ export const ForgotLink = styled.a`
 
 export const LabelWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 0px 10px 0px 20px;
+    margin-left: 40px;
+`;
+
+export const Label = styled.label`
+    margin-bottom: 20px;
+`;
+
+export const Welcome = styled.h1`
+    margin: 30px
 `;
 

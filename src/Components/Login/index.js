@@ -1,4 +1,4 @@
-import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2, ForgotLink, LabelWrapper } from "./styled";
+import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2, ForgotLink, LabelWrapper, Label, Welcome, SignLink } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
 import { useState } from "react";
@@ -14,7 +14,7 @@ export const Login = () => {
         <>
         <Wrapper>
             <Part1>
-                <h1>Hello User!</h1>
+                <Welcome>Hello User!</Welcome>
                 <br/><br/><br/>
                 <InputWrapper>
                     <IconWrapper>
@@ -29,14 +29,14 @@ export const Login = () => {
                         </ShowPasswordButton>
                     </IconWrapper>
                     <LabelWrapper>
-                        <label><input type="checkbox" /> &nbsp; Remember Me &nbsp; |</label>
+                        <Label><input type="checkbox" /> &nbsp; Remember Me &nbsp; </Label>
                         <ForgotLink href="#">forgot password ?</ForgotLink>
                     </LabelWrapper>
                 </InputWrapper>
             </Part1>
             <Part2>
                 <Button>LOG IN</Button>
-                <SignInInfo>Don't have an account yet? Sign Up</SignInInfo>
+                <SignInInfo href="#">Don't have an account yet? <SignLink>Sign Up</SignLink></SignInInfo>
             </Part2>
         </Wrapper>
         </>
