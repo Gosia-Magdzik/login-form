@@ -1,8 +1,10 @@
-import { Wrapper, BasisA, BasisB, Logo } from "./styled";
+import { Wrapper, BasisA, BasisB } from "./styled";
 import { Login } from "../Login";
 import { useState } from "react";
 import { SignIn } from "../SignIn";
 import { AccountContext } from "../accountContext";
+import background from "../Images/background.jpg"
+
 
 const Variants = {
    expanded: {
@@ -45,9 +47,7 @@ export const MainBox = () => {
     return (
         <>
         <Wrapper>
-                <BasisA>
-                    <Logo>Logo</Logo>
-                </BasisA>
+                <BasisA src={background} />
         <AccountContext.Provider value={contextValue}>        
                 <BasisB 
                     initial={false}

@@ -9,30 +9,28 @@ export const Wrapper = styled.div`
     border-radius: 20px;
     margin-top: 10%;
     position: relative;
+    width: 700px;
+    height: 85vh;
+
 
     @media (max-width: 768px) {
-        height: 100%;
-        width: auto;
+        height: 100vh;
+        width: 700px;
         margin: 2%;
     };
 `;
 
 export const BasisA = styled.div`
-    background: #00aaaa80;
-    box-shadow: inset 0 0 3em #00aaaa80, 0 0 3em #00aaaa80;
-    flex-basis: 30%;
-    align-items: center;
-    justify-content: flex-end;
+    box-shadow: inset 0 0 1em #00aaaa80, 0 0 1em #00aaaa80;
+    flex-basis: 60%;
     display: flex;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;`;
-
-export const Logo = styled.p`
-    color: black;
-    padding: 10px;
-    border: 1px solid;
-    margin: 30px;
-`;
+    border-bottom-left-radius: 20px;
+    background-image: url(${props => props.src});
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    `;
 
 export const BasisB = styled(motion.div)`
     background: none;
