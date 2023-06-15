@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, Part1, Part2, ForgotLink, LabelWrapper, Label, Welcome, SignLink } from "./styled";
+import { Input, InputWrapper, IconWrapper, Img, Button, ShowPasswordButton, SignInInfo, Wrapper, ForgotLink, LabelWrapper, Label, Welcome, SignLink, Part1, Part2 } from "./styled";
 import fingerprint from "../Images/fingerprint.svg"
 import avatar from "../Images/avatar.svg"
 import eyeOpen from "../Images/eye_open.svg"
@@ -16,8 +16,8 @@ export const Login = () => {
     return (
         <>
         <Wrapper>
-            <Part1>
                 <Welcome>Hello User!</Welcome><br/>
+                <Part1>
                 <InputWrapper>
                     <IconWrapper>
                         <Img src={avatar} />
@@ -35,11 +35,11 @@ export const Login = () => {
                         <ForgotLink href="#">forgot password ?</ForgotLink>
                     </LabelWrapper>
                 </InputWrapper>
-            </Part1>
-            <Part2>
-                <Button>LOG IN</Button>
-                <SignInInfo href="#">Don't have an account yet? <SignLink onClick={switchToSignup}>Sign Up</SignLink></SignInInfo>
-            </Part2>
+                </Part1>
+                <Part2>
+                    <Button>LOG IN</Button>
+                    <SignInInfo href="#">Don't have an account yet? <SignLink onClick={switchToSignup}>Sign Up</SignLink></SignInInfo>
+                </Part2>
         </Wrapper>
         </>
     );

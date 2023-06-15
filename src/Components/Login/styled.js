@@ -77,28 +77,21 @@ export const ShowPasswordButton = styled.button`
 export const SignInInfo = styled.div`
     margin-bottom: 40px;
     word-wrap: break-word;
+    color: gray;
 `;
 
 export const SignLink = styled.a`
     font-weight: bold;
     color: rgba(0,170,170,1);
-    
 `;
-
 
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 15px;
 `;
 
-export const Part1 = styled.div`
-    margin: 15px;
-`;
-
-export const Part2 = styled.div`
-    margin: 15px;
-`;
 
 export const ForgotLink = styled.a`
     text-decoration: none;
@@ -116,6 +109,13 @@ export const Label = styled.label`
 `;
 
 export const Welcome = styled.h1`
-    margin: 30px
+    margin: 30px;
 `;
 
+export const Part1 = styled.div`
+        margin: 30px;
+`;
+
+export const Part2 = styled.div`
+        margin-bottom: 40px;
+`;

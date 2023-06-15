@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
 import { AccountContext } from "../accountContext";
-import { SignLink, SignInInfo, Wrapper, Part2, Button, Img, Input, IconWrapper, ShowPasswordButton } from "../Login/styled";
-import fingerprint from "../Images/fingerprint.svg"
-import avatar from "../Images/avatar.svg"
-import eyeOpen from "../Images/eye_open.svg"
-import eyeClose from "../Images/eye_close.svg"
+import { SignLink, SignInInfo, Wrapper, Part2, Button, Img, Input, IconWrapper, ShowPasswordButton, Welcome } from "../Login/styled";
+import fingerprint from "../Images/fingerprint.svg";
+import avatar from "../Images/avatar.svg";
+import eyeOpen from "../Images/eye_open.svg";
+import eyeClose from "../Images/eye_close.svg";
+import email from "../Images/email.svg";
+import phone from "../Images/phone.svg";
 
 
 export const SignIn = () => {
@@ -15,6 +17,19 @@ export const SignIn = () => {
 
     return (
         <Wrapper>
+            <Welcome>Register</Welcome><br/>
+            <IconWrapper>
+                <Img src={avatar} />
+                <Input type="text" placeholder="username"/>
+            </IconWrapper>
+            <IconWrapper>
+                <Img src={email} />
+                <Input type="email" placeholder="email address"/>
+            </IconWrapper>
+            <IconWrapper>
+                <Img src={phone} />
+                <Input type="phone" placeholder="phone"/>
+            </IconWrapper>
             <IconWrapper>
                 <Img src={fingerprint}/>
                 <Input type={showPassword ? 'text' : 'password'} placeholder="password"/>
