@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { AccountContext } from "../accountContext";
-import { SignLink, SignInInfo, Wrapper, Button, Img, Input, ShowPasswordButton, InputWrapper, Part1, Part2 } from "../Login/styled";
-import { IconWrapper, Welcome } from "./styled";
+import { SignLink, Wrapper, Button, Img, Input, ShowPasswordButton, InputWrapper, Part1, Part2 } from "../Login/styled";
+import { IconWrapper, Welcome, SignInInfo } from "./styled";
 import fingerprint from "../Images/fingerprint.svg";
 import avatar from "../Images/avatar.svg";
 import eyeOpen from "../Images/eye_open.svg";
@@ -18,7 +18,7 @@ export const SignIn = () => {
 
     return (
         <Wrapper>
-            <Welcome>Register</Welcome><br/>
+            <Welcome>Register</Welcome>
             <Part1>
                 <InputWrapper>
                     <IconWrapper>
@@ -33,7 +33,6 @@ export const SignIn = () => {
                         <Img src={phone} />
                         <Input type="phone" placeholder="phone"/>
                     </IconWrapper>
-                    <hr/><br/>
                     <IconWrapper>
                         <Img src={fingerprint}/>
                         <Input type={showPassword ? 'text' : 'password'} placeholder="password"/>

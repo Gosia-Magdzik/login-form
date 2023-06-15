@@ -12,10 +12,12 @@ export const Wrapper = styled.div`
     width: 700px;
     height: 85vh;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         height: 100vh;
         width: 90vh;
-        margin: 2%;
+        margin-top: 0;
+        box-shadow: none ;
+        flex-direction: column;
     };
 `;
 
@@ -28,6 +30,10 @@ export const BasisA = styled.div`
     background-size: cover;
     background-position: center;
     flex-grow: 1;
+
+    @media (max-width: 767px) {
+        overflow: hidden;
+    }
     `;
 
 export const BasisB = styled(motion.div)`

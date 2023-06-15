@@ -8,6 +8,15 @@ export const Input = styled.input`
     height: 45px;
     width: 100%;
     padding: 5px;
+    margin-left: 10px;
+
+    @media (max-width: 768px) {
+        margin-right: 5px;
+        //margin-left: 40px;
+        max-width: 90%;
+        text-align: center;
+    };
+    
 `;
 
 export const InputWrapper = styled.div`
@@ -17,6 +26,9 @@ export const InputWrapper = styled.div`
 
     @media (max-width: 768px) {
         margin-right: 5px;
+        max-width: 100%;
+        margin-left: 40px;
+        align-items: center;
     };
 `;
 
@@ -45,6 +57,11 @@ export const Button = styled(motion.button)`
     height: 50px;
     border-radius: 30px;
 
+    @media (max-width: 767px) {
+        max-width: 100%;
+        margin-left: 40px;
+    };
+
     &:hover {
         background-color: #C9FFC3;
     }
@@ -70,6 +87,11 @@ export const SignInInfo = styled.div`
     margin-bottom: 40px;
     word-wrap: break-word;
     color: gray;
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    };
+    
 `;
 
 export const SignLink = styled.a`
@@ -83,6 +105,10 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+
+    @media (max-width: 767px) {
+        align-items: center
+    };
 `;
 
 
@@ -95,6 +121,13 @@ export const LabelWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin-left: 40px;
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        margin-left: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    };
 `;
 
 export const Label = styled.label`
@@ -103,12 +136,25 @@ export const Label = styled.label`
 
 export const Welcome = styled.h1`
     margin: 30px;
+
+    @media (max-width: 767px) {
+        margin-left: 40px;
+    };
 `;
 
 export const Part1 = styled.div`
         margin: 30px;
+
+        @media (max-width: 767px) {
+            margin: 0;
+    };
 `;
 
 export const Part2 = styled.div`
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            max-width: 80%;
+            margin-left: 40px;
+    };
 `;
