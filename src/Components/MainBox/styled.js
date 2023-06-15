@@ -12,16 +12,14 @@ export const Wrapper = styled.div`
     width: 700px;
     height: 85vh;
 
-
     @media (max-width: 768px) {
         height: 100vh;
-        width: 700px;
+        width: 90vh;
         margin: 2%;
     };
 `;
 
 export const BasisA = styled.div`
-    box-shadow: inset 0 0 1em #00aaaa80, 0 0 1em #00aaaa80;
     flex-basis: 60%;
     display: flex;
     border-top-left-radius: 20px;

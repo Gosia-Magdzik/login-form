@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Input = styled.input`
     border: 1px solid;
@@ -34,33 +35,24 @@ export const Img = styled.img`
     margin-right: 4px;
 `;
 
-export const Button = styled.button`
-    color: black;
-	background: none;
-	border-radius: 0;
+export const Button = styled(motion.button)`
+	background: #74D36A;
 	padding: 1.2em 5em;
 	letter-spacing: 0.35em;
 	font-size: 0.7em;
-	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-    box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
-	border: #0dd solid 2px;
     margin: 40px;
     width: 80%;
     height: 50px;
     border-radius: 30px;
 
     &:hover {
-        filter: brightness(1.05);
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
-        background-color: #0dd;
-		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
+        background-color: #C9FFC3;
     }
 
     &:active {
         transform: scale(1.2);
         transition: transform 0.3s ease;
-        background-color: #0dd;
+        background-color: #E7FFE4;
     }
 `;
 
@@ -82,7 +74,8 @@ export const SignInInfo = styled.div`
 
 export const SignLink = styled.a`
     font-weight: bold;
-    color: rgba(0,170,170,1);
+    color: #74D36A;
+    cursor: pointer;
 `;
 
 export const Wrapper = styled.div`
