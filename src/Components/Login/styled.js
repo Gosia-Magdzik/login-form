@@ -52,7 +52,7 @@ export const Button = styled(motion.button)`
 	padding: 1.2em 5em;
 	letter-spacing: 0.35em;
 	font-size: 0.7em;
-    margin: 40px;
+    margin: 10px;
     width: 80%;
     height: 50px;
     border-radius: 30px;

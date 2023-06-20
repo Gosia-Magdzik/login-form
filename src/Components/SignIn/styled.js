@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const IconWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    //align-items: flex-end;
     margin-bottom: 25px;
     border: 1px, solid;
     position: relative;
+    width: 100%;
 
     @media (max-width: 767px) {
         margin-bottom: 15px;
@@ -35,7 +35,7 @@ export const Button = styled.button`
 	padding: 1.2em 5em;
 	letter-spacing: 0.35em;
 	font-size: 0.7em;
-    margin: 40px;
+    margin: 10px;
     width: 80%;
     height: 50px;
     border-radius: 30px;
@@ -66,5 +66,18 @@ export const SignInInfo = styled.div`
     @media (max-width: 767px) {
         margin-bottom: 10px;
     };
-    
+`;
+
+export const Info = styled.p`
+    background: #ff5353;
+    color: #f4fcff;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 3px 0 0 10px;
+    position: relative;
+`;
+
+export const InfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
 `;

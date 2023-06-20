@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
     box-shadow: 5px 6px 6px 0px ;
     background-color: #f4fcff;
     border-radius: 20px;
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
     width: 700px;
-    height: 85vh;
+    //height: 85vh;
 
     @media (max-width: 767px) {
         height: 100vh;
