@@ -10,10 +10,10 @@ export const Input = styled.input`
     padding: 5px;
     margin-left: 10px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         margin-right: 5px;
         //margin-left: 40px;
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
     };
     
@@ -27,7 +27,7 @@ export const InputWrapper = styled.div`
     @media (max-width: 768px) {
         margin-right: 5px;
         max-width: 100%;
-        margin-left: 40px;
+        margin-left: 10px;
         align-items: center;
     };
 `;
@@ -64,6 +64,8 @@ export const Button = styled(motion.button)`
 
     &:hover {
         background-color: #C9FFC3;
+        transition: transform 0.3s ease;
+        transform: scale(1.05);
     }
 
     &:active {
@@ -125,8 +127,7 @@ export const LabelWrapper = styled.div`
     @media (max-width: 767px) {
         max-width: 100%;
         margin-left: 10px;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
     };
 `;
 
@@ -151,10 +152,14 @@ export const Part1 = styled.div`
 `;
 
 export const Part2 = styled.div`
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
         @media (max-width: 767px) {
             max-width: 80%;
             margin-left: 40px;
-    };
+        };
 `;

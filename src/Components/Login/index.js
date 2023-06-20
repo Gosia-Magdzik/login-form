@@ -37,10 +37,7 @@ export const Login = () => {
                 </InputWrapper>
                 </Part1>
                 <Part2>
-                    <Button 
-                    whileHover={{    
-                               transition: { type: "spring", stiffness: 200, damping: 5 } } }
->LOG IN</Button>
+                    <Button>LOG IN</Button>
                     <SignInInfo href="#">Don't have an account yet? <SignLink onClick={switchToSignup}>Sign Up</SignLink></SignInInfo>
                 </Part2>
         </Wrapper>
