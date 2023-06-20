@@ -1,19 +1,20 @@
 <div align="center"> 
 
-# Interactive login & signin form
+# <span style="color: #C0E5C8;">Interactive login & signin form</span>
 
-<img src="./login.png" width="60%">
+<img src="./login.png" width="100%">
 
-</div>
+
  Project is an interactive form that allows users to log in or sign up if they don't have an account yet.
+</div>
 
- - To handle state management within the application, I utilized the <b>useContext</b> hook.
+ - To handle state management within the application, I utilized the <b><span style="color: #C0E5C8;">useContext</b></span> hook.
 
- - Designed to be fully <b>responsive</b> and optimized for mobile devices.
+ - Designed to be fully <span style="color: #C0E5C8;"><b>responsive</b></span> and optimized for mobile devices.
 
- - The project includes <b>data validation</b> to guide users in correctly filling out the form.
+ - The project includes <span style="color: #C0E5C8;"><b>data validation</b></span> to guide users in correctly filling out the form.
  
- - I implemented The <b>Framer Motion</b> library which allows the screen to rotate when transitioning from the login to the sign-up page. 
+ - I implemented The <span style="color: #C0E5C8;"><b>Framer Motion</b></span> library which allows the screen to rotate when transitioning from the login to the sign-up page. 
 
 I'm happy to present this interactive project and hope it proves to be both useful and enjoyable for users. 
 
